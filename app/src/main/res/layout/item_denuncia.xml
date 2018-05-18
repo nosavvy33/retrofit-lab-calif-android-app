@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:layout_margin="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id"
+        android:visibility="invisible"/>
+    <LinearLayout
+        android:layout_margin="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_marginStart="6dp"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="Titulo"
+                android:id="@+id/titulo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:text="Descripcion"
+                android:id="@+id/descripcion"/>
+            <LinearLayout
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ver"
+                    android:background="@color/colorAccent"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:id="@+id/btnver"
+                    android:elevation="5dp"/>
+
+                <Button
+                    android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="#fff"
+                android:text="Eliminar"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btneliminar"
+                    android:elevation="5dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
